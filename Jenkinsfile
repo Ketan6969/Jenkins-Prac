@@ -5,9 +5,9 @@ pipeline{
         stage('checkout'){
             steps {
                 //this will fetch the code from the github
-                git 'https://github.com/Ketan6969/Jenkins-Prac/HelloWorld.java'
-                
+                git 'https://github.com/Ketan6969/Jenkins-Prac/HelloWorld.java'       
             }
+        }
         stage('compile'){
             steps{
                 script{
@@ -24,7 +24,5 @@ pipeline{
                 }
             }
         }
-        }
-
-    }
+   }
 }
