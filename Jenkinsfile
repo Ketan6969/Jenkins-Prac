@@ -5,8 +5,7 @@ pipeline{
         stage('checkout'){
             steps {
                 //this will fetch the code from the github
-               git 'https://github.com/Ketan6969/Jenkins-Prac.git' 
-                      
+                checkout scmGit(branches: [[name : 'main']], userRemoteConfigs: [[url: 'https://github.com/Ketan6969/Jenkins-Prac/']])  
             }
         }
         stage('compile'){
