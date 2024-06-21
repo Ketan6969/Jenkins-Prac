@@ -5,7 +5,8 @@ pipeline{
         stage('checkout'){
             steps {
                 //this will fetch the code from the github
-                git 'https://github.com/Ketan6969/Jenkins-Prac.git'       
+               // git 'https://github.com/Ketan6969/Jenkins-Prac.git' 
+                git branch: 'main', url: 'https://github.com/Ketan6969/Jenkins-Prac.git''      
             }
         }
         stage('compile'){
