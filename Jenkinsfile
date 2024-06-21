@@ -1,7 +1,7 @@
 pipeline{
     agent any    
     stages{
-        #This is the actual stage
+        //This is the actual stage
         stage('checkout'){
             steps {
                 //this will fetch the code from the github
